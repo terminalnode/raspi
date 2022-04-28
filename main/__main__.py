@@ -2,7 +2,8 @@ def run_random():
     from sense.SenseRandom import SenseRandom
     SenseRandom().run()
 
-def run_line(random = False):
+
+def run_line(random=False):
     from sense.SenseLineDrawer import SenseLineDrawer
     sld = SenseLineDrawer()
     if random:
@@ -10,6 +11,7 @@ def run_line(random = False):
     else:
         sld.auto()
 
+
 if __name__ == "__main__":
     print("Running main")
-    run_line(random = True)
+    run_line(random=True)

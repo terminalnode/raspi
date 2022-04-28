@@ -2,6 +2,7 @@ from sense_hat import SenseHat
 import random
 import time
 
+
 class SenseRandom:
     def __init__(self, min_color=50, max_color=150):
         self.min_color = min_color
@@ -10,8 +11,8 @@ class SenseRandom:
         self.initialize_random()
 
     def initialize_random(self):
-        for x in range(0,8):
-            for y in range(0,8):
+        for x in range(0, 8):
+            for y in range(0, 8):
                 self.sense.set_pixel(x, y, self.random_color())
 
     def run(self):
