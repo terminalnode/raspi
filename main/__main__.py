@@ -12,6 +12,12 @@ def run_line(random=False):
         sld.auto()
 
 
+def turn_off_sense():
+    """Turn off all pixels on the display."""
+    from sense_hat import SenseHat
+    SenseHat().clear()
+
+
 if __name__ == "__main__":
     print("Running main")
     run_line(random=True)
